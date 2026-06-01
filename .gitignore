@@ -1,0 +1,23 @@
+# --- Credentials (NEVER commit) ---
+.creds/
+google_books_key.txt
+gemini_api_key.txt
+
+# --- Caches & local-only state ---
+.cache_*.md
+.gemini_cache.json
+__pycache__/
+*.pyc
+
+# --- Backups (regenerable, would bloat the repo) ---
+audiobooks.before_*.xlsx
+audiobooks.backup.xlsx
+audiobooks_rerun.xlsx
+diagnose.out
+
+# --- Source PDFs (the user's screencaptures, not for the repo) ---
+*.pdf
+!docs/*.pdf
+
+# --- macOS junk ---
+.DS_Store

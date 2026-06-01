@@ -1,0 +1,13 @@
+# playlist_id<TAB>destination_tab_name
+37i9dQZF1CHNJaMQB8FMMn	Top
+37i9dQZF1CHT0u8cbeDlkr	Romance
+37i9dQZF1CHSUrTnfwXo9Y	Mystery & Thriller
+37i9dQZF1CHKw7Rdk4reur	Kids & Family
+37i9dQZF1CHW1rLDWEkz4P	Parenting & Relationships
+37i9dQZF1CHJqhO7Tb0Aq5	History
+37i9dQZF1CHWPLEJxCaAr7	Religion & Spirituality
+37i9dQZF1CHSLN7nOfbh3E	Teen & Young Adult
+37i9dQZF1CHND3tYQBenWx	Business & Careers
+37i9dQZF1CHCmXPRIw1m4n	Entertainment Biography
+37i9dQZF1CHShViq8tHUSO	SciFi & Fantasy
+37i9dQZF1CHSGVWsnPOKrL	Self-Help
