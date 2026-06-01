@@ -16,7 +16,9 @@ audiobooks_rerun.xlsx
 diagnose.out
 
 # --- Source PDFs (the user's screencaptures, not for the repo) ---
+# Allow generated chart PDFs under output/pdfs/, block everything else.
 *.pdf
+!output/pdfs/*.pdf
 !docs/*.pdf
 
 # --- macOS junk ---
