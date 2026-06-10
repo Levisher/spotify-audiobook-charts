@@ -77,6 +77,10 @@ def main():
         print(f"  ✓ {tab} -> ~/Downloads/audiobooks_{safe}_{TODAY}.pdf")
     for tab in failures:
         print(f"  ✗ {tab}")
+    # Exit non-zero if any playlist failed so CI marks the run as failed
+    # (otherwise GitHub Actions reports green even when every scrape 402s).
+    if failures:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
