@@ -6,6 +6,10 @@ on:
     - cron: "0 13 * * 1"
   # Manual trigger from the Actions tab — for ad-hoc refresh
   workflow_dispatch:
+  # Touch + push .trigger to fire an ad-hoc refresh without needing PAT/API
+  push:
+    paths:
+      - '.trigger'
 
 permissions:
   contents: write   # so the workflow can commit & push back into the repo
