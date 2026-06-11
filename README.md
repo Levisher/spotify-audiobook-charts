@@ -2,6 +2,20 @@
 
 Weekly snapshot of Spotify's editorial audiobook playlists into a tracked spreadsheet + per-chart PDFs, with rank-change deltas vs the previous refresh.
 
+## Quickstart: fork this and run your own (5 minutes)
+
+1. Click **Use this template** (top right of this page) → create your private copy under your account.
+2. Get a free Gemini API key at https://aistudio.google.com/app/apikey. Free tier covers ~250 lookups/day; with caching, that lasts months. Optional: enable billing for unlimited.
+3. Get a free Firecrawl key at https://www.firecrawl.dev/ (1,000 page scrapes/month free). Weekly refresh of 12 playlists uses ~52 credits/month.
+4. In your forked repo: **Settings → Secrets and variables → Actions → New repository secret**. Add two:
+   - `GEMINI_API_KEY` (the `AIzaSy...` string)
+   - `FIRECRAWL_API_KEY` (the `fc-...` string)
+5. **Actions** tab → if prompted, click "I understand my workflows, enable them".
+6. Edit `playlists.txt` if you want different playlists. Format: `<playlist_id><tab><tab name>`. Find IDs in any Spotify playlist URL: `open.spotify.com/playlist/<this part>`.
+7. **Actions → Weekly audiobook refresh → Run workflow** to fire your first run. After ~7 minutes you'll have an updated `audiobooks.xlsx` and 12 PDFs in `output/pdfs/`, committed by the bot.
+
+After step 7 the weekly cron (Monday 13:00 UTC) takes over. Every refresh commits the new xlsx and dated PDFs back to your repo, so the git history doubles as your weekly archive.
+
 ## What's tracked
 
 12 playlists from `playlists.txt`:
